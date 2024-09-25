@@ -1,8 +1,10 @@
 # from rest_framework import routers
-from .views import get_categories, get_features
+from . import views
+from .views import get_categories, get_features, index
 from django.urls import path
 
 urlpatterns = [
+    path('', index, name='index'),
     path('categories/', get_categories, name='categories'),
     path('features/', get_features, name='features'),
 ]

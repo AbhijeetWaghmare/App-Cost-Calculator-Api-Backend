@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -7,6 +8,8 @@ from .serializers import CategorySerializer,FeatureSerializer
 from .filters import CategoryFilter,FeatureFilter
 # Create your views here.
 
+def index(request):
+    return HttpResponse("Hello backend is up...")
 
 @api_view(['GET'])
 def get_categories(request):
