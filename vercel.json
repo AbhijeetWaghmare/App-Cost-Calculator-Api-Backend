@@ -1,5 +1,5 @@
 {
-  "build": [{
+  "builds": [{
     "src": "django_project/wsgi.py",
     "use": "@vercel/python",
     "config": {"maxLambdaSize": "15mb","runtime": "python3.12"}
@@ -9,6 +9,5 @@
       "src": "/(.*)",
       "dest": "django_project/wsgi.py"
     }
-  ],
-  "buildCommand": "next build"
+  ]
 }
