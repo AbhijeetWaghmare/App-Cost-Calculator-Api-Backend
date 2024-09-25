@@ -20,8 +20,8 @@ DEBUG = os.environ.get('DEBUG')
 ALLOWED_HOSTS = ['.vercel.app']
 # ALLOWED_HOSTS = []
 
-CORS_ORIGIN_WHITELIST = os.environ.get('CORS_ORIGIN_WHITELIST')
-# CORS_ORIGIN_WHITELIST = ['http://localhost:5173']
+CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS')
+
 # Application definition
 
 INSTALLED_APPS = [
