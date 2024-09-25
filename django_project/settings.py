@@ -21,7 +21,7 @@ ALLOWED_HOSTS = ['.vercel.app']
 # ALLOWED_HOSTS = []
 
 CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS')
-
+CORS_ALLOW_ALL_ORIGINS = os.environ.get('CORS_ALLOW_ALL_ORIGINS')
 # Application definition
 
 INSTALLED_APPS = [
